@@ -1,2 +1,10 @@
 node_modules
 .env
+.env.*
+!.env.example
+dist
+coverage
+cdk.out
+playwright-report
+test-results
+*.tsbuildinfo

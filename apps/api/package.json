@@ -1,0 +1,22 @@
+{
+  "name": "@friendly-funicular/api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --target=node22 --format=esm --sourcemap --outfile=dist/index.mjs",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@friendly-funicular/shared": "1.0.0",
+    "jose": "^6.2.12"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.150",
+    "@types/node": "^22.10.0",
+    "esbuild": "^0.28.2",
+    "vitest": "^5.0.1"
+  }
+}

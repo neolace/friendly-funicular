@@ -1,2 +1,8 @@
 node_modules
 package-lock.json
+dist
+coverage
+cdk.out
+playwright-report
+test-results
+plan.md
